@@ -1,33 +1,18 @@
 import React from 'react'
+import tomate from '../assets/tomate.svg'
+import boneco from '../assets/boneco.svg'
 
-export default function Home () {
-  // let content = null
-  // const url =
-  //   'https://5f26dc810824d8001655ec9d.mockapi.io/products?page=1&limit=10'
-
-  // const products = useAxiosGet(url)
-
-  // if (products.error) {
-  //   content = <p>There was an error refresh or try again</p>
-  // }
-
-  // if (products.loading) {
-  //   content = <Loader />
-  // }
-
-  // if (products.data) {
-  //   content = products.data.map((product, key) => (
-  //     <li key={product.id} className='max-w-full md:max-w-sm  m-auto flex mb-4'>
-  //       <ProductCard product={product} />
-  //     </li>
-  //   ))
-  // }
-
-  return (
-    <h1>Smart Horticuture</h1>
-    // <div>
-    //   <h1 className='font-bold text-2xl mb-3'>Best Sellers</h1>
-    //   <ul className='flex flex-wrap'>{content}</ul>
-    // </div>
-  )
+export default function Home() {
+	return (
+		<div className="h-screen">
+			<header className="flex w-full flex-col justify-center items-center h-64">
+				<img className="tomatao" src={tomate} alt="tomate" />
+				<h1 className="text-5xl mt-6 text-center font-bold text-white">Smart Horticuture</h1>
+			</header>
+			<div className="flex mt-24 flex-col justify-end w-full items-end md:justify-center md:items-center">
+				<img className="w-24 mr-12" src={boneco} alt="boneco" />
+				<button type="button" className="mr-10 mt-2 bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-2 px-4 rounded">Vamos lá</button>
+			</div>
+		</div>
+	)
 }

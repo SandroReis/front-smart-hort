@@ -4,6 +4,14 @@
 
 @tailwind utilities;
 
+.tomatao {
+  width: 4em;
+}
+
+#root {
+  background-color: #43732D;
+}
+
 .lds-ring {
   display: inline-block;
   position: relative;
