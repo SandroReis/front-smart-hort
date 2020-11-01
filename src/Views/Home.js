@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 
 export default function Home() {
 	return (
-		<div className="h-screen">
+		<div className="h-screen flex flex-col justify-center">
 			<header className="flex w-full flex-col justify-center items-center h-64">
 				<img className="tomatao" src={tomate} alt="tomate" />
-				<h1 className="text-5xl mt-6 text-center font-bold text-white">
+				<h1 className="text-5xl mt text-center font-bold text-white">
 					Smart Horticuture
 				</h1>
 			</header>

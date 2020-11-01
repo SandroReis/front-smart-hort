@@ -1,10 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Header from './Components/Header'
-import Footer from './Components/Footer'
-import Home from './Views/Home'
-import About from './Views/About'
+import Feiras from './Views/Feiras'
 import Product from './Views/Product'
+import Home from './Views/Home';
 
 function App () {
   return (
@@ -16,7 +14,10 @@ function App () {
               <Home />
             </Route>
             <Route path='/feiras'>
-              <About />
+              <Feiras />
+            </Route>
+            <Route path='/products'>
+              <Product />
             </Route>
           </Switch>
 
